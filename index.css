@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #7bed9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center_div{
+    width: 35vw;height: 70vh;
+    /* min-width: 400px; */
+    background-color: #f4f4f4;
+    
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+h1{
+    color:rgb(0,0,0,0.87);
+    /* background: transparent; */
+    font-size: 50px;
+    margin-bottom: 64px;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    text-shadow:5px 5px 5px rgba(0,0,0,0.3);
+}
+input{
+    text-align: center;
+    height:30px;
+    margin-right: 20px;
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #1B1464;
+    outline: none;
+}
+.newBtn{
+    /* min-height: 40px; */
+    width: 45px;
+    min-width: 20px !important;
+    height: 50px;
+    border-radius: 50% !important;
+    background-color:#16a085 !important;
+    color:#fff !important;
+    font-size: 29px;
+    border:none;
+    outline:none;
+    /* margin-left: 10px; */
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+/* button{
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#1B1464 ;
+    color:#fff;
+    font-size: 29px;
+    border:none;
+    outline:none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+} */
+.newBtn:hover{
+color: #16a085 !important;
+background: white !important;
+}
+.MuiSvgIcon-root{
+    width:2rem !important;
+    height:2rem !important;
+}
+ol{
+    margin-top: 30px;
+}
+ol li{
+    padding-left: 0;
+    overflow: auto;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color:#8566aa;
+    text-transform: capitalize;
+}
+li::-webkit-scrollbar{
+    overflow: hidden;
+}
+.todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+   
+    /* justify-content: center; */
+    /* background-color: #1B1464; */
+    /* border-radius: 50%;
+    margin:0 15px 0 35px;
+    color:aliceblue; */
+}
+.fa-times{
+    background-color: #1B1464;
+    width: 20px;height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 15px 0 35px;
+    border-radius: 50%;
+    padding: auto;
+    color:aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.9);
+}
+.todo_style .checkIcon {
+    width: 25px;height: 25px;display: flex;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 50%;
+    margin: 0 15px 0 -8px;
+    padding:5px;
+    color:aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+.deleteIcon{
+    width: 25px;height: 25px;display: flex;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    padding:5px;
+    color:aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+.todo_style .checkIcon:hover {
+    background-color: transparent;
+    color:crimson;
+    box-shadow:5px 5px 15px -5px rgba(255,0,0,0.5);
+}
+.todo_style .deleteIcon:hover {
+    background-color: transparent;
+    color:crimson;
+    box-shadow:5px 5px 15px -5px rgba(255,0,0,0.5);
+}
+.todo_style .fa-times:hover .list_style{
+    color:crimson
+}
+.todo_style .fa-times:hover{
+    background-color: crimson;
+}
+.todo_style .fa-times:hover .list_style{
+    color: crimson;
+}
+@media(max-width:1024px){
+    h1{
+        font-size: 30px;
+    }
+    .center_div{
+        width: 70vw;
+    }
+    .todo_style .fa-times{
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color:#FFF;
+        font-size: 30px;
+    } */
+    .newBtn{
+        /* min-height: 40px; */
+        min-width: 2px !important;
+        width:5vw;
+        padding: 2px;
+        height: 5vh;
+        border-radius: 50% !important;
+        background-color:#16a085 !important;
+        color:#fff !important;
+        font-size: 15px;
+        border:none;
+        outline:none;
+        /* margin-left: 10px; */
+        box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+    }
+    
+    .addIcon{
+        width: 4vw !important;
+        height: 4vh !important;
+
+    }
+    
+    .todo_style .checkIcon{
+        
+        width: 3vw !important;height: 3vh !important;
+        min-width: 2px !important;
+        padding: .5px ;
+    }
+    .deleteIcon {
+        margin-left: 1px;
+        width: 3vw !important;height: 3vh !important;
+        min-width: 2px !important;
+        padding: .5px ;
+       
+    }
+    /* .fa-times{
+        width: 5px;
+    } */
+   
+}
